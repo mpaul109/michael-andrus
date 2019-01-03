@@ -1,0 +1,227 @@
+body{
+  margin: 0;
+  background-color: white;
+}
+
+
+p{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 35px;
+}
+
+h1,h2, h3{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+button {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 500%;
+  border: none;
+  background-color: white;
+  }
+
+.button1{
+  color: #F24537;
+}
+
+.button2{
+  color: #01B29E;
+}
+
+.button3{
+  color: #7A7466;
+}
+
+button:hover {
+    color: black;
+}
+
+
+.site .logo img{
+  margin-left: 100px;
+}
+
+.logo img {
+  margin: 20px;
+  width: 70%;
+  border-radius: 20%;
+}
+
+.about img{
+  float: left;
+  width: 17%;
+  border-radius: 20%;
+  margin-right: 2em;
+  margin-bottom: 0.5em;
+  shape-outside: circle();
+}
+
+
+.me{
+  grid-area:me;
+  background-color: white;
+  border-bottom: solid;
+  border-color: #01B29E;
+  margin: 4em;
+
+}
+
+.me .music{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.me .about p{
+    text-inden: 50px;
+}
+
+.about{
+  margin-top: 20px;
+      border-top: 2px solid;
+      border-color: #F24537;
+      border-radius: 40px;
+      text-align: center;
+}
+
+.contact{
+  margin-top: 20px;
+      border-top: 2px solid;
+      border-color: #F24537;
+      border-radius: 40px;
+      text-align: center;
+}
+
+.head{
+  grid-area: head;
+  background-color: white;
+
+}
+
+.click{
+  grid-area: click;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: ;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  box-shadow: 0 10px 10px -10px black;
+
+
+
+}
+
+
+button:active, button:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+.site {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 0.5fr 100px 550px 1fr;
+  grid-template-areas:
+  ". . . "
+  ". head . "
+  ". . . "
+  "click click click";
+}
+
+.sitelink {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+grid-template-rows: 0.4fr 1.5fr;
+  grid-template-areas:
+  "head click click click "
+  "me me me me"
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .sitelink {
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+      grid-template-rows: 100px 150px 1fr;
+    grid-template-areas:
+    "head click "
+    "me me"
+    "me me "
+  }
+
+
+  .site {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-rows: 2fr 100px 300px 1fr;
+    grid-template-areas:
+    ". . . "
+    ". head ."
+    ". . . "
+    "click click click";
+  }
+
+
+  .click{
+    grid-area: click;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0px 0px 0px;
+
+  }
+
+  button {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 115%;
+    border: none;
+    background-color: white;
+    padding: 0px;
+    border-bottom: solid;
+    border-width: thin;
+    }
+
+
+    .about img{
+      margin-left: 20px;
+      float: none;
+      width: 17%;
+      min-width: 100px;
+    }
+
+
+    .logo img {
+      width: 50%;
+      border-radius: 20%;
+    }
+
+    .site .logo img {
+      width: 300px;
+      max-height: 30%
+      border-radius: 20%;
+      margin-left:25px;
+    }
+
+    a{
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    a .button3{
+      margin-right: 30px;
+    }
+
+
+    p{
+      font-size: 20px;
+    }
+}
